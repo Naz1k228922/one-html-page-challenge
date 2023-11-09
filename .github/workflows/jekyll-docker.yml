@@ -33,3 +33,12 @@ jobs:
         git add -f dist/
         git commit -m "Deploy to GitHub Pages"
         git push origin gh-pages --force
+    
+      
+    - name: Deploy 🚀
+      uses: Naz1k228922/one-html-page-challenge@v4
+      with:
+        branch: releases/v4
+        folder: .
+        clean: false
+        single-commit: true
